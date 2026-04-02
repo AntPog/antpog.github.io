@@ -6,11 +6,7 @@
     const firebaseConfig = {
       databaseURL: "https://my-site-github-8ae76-default-rtdb.europe-west1.firebasedatabase.app/",
     };
-    $(document).ready(function(){
-    $('#id.button').click(function(){
-       CapacityChart();
-    });
-    });
+   
     
     const app = initializeApp(firebaseConfig);   
     
@@ -37,7 +33,7 @@
 
   
     <input type="text" id="id.pass" name="fname">
-    <input type="button" id="id.button">
+    <button type="button" id="id.button" onclick="check_password()">
 
     
  
