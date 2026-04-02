@@ -17,6 +17,7 @@
     const database = getDatabase(app);
 
     function check_password() {
+      console.log("im here!");
       const password = document.getElementById('id.pass').value;
       const passRef = ref(database, 'password' );
       onValue(passRef, (snapshot) => {
